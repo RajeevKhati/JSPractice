@@ -11,7 +11,7 @@ const promise3rej = () => Promise.reject(3);
  *  resolves when any one of the promise is resolved
  *      - provides value of resolved promise in then block
  *  rejects when all promises are rejected
- *      - provides value of all rejected promise in an AggregateError(an array but not exactly array)
+ *      - provides value of all rejected promise in an AggregateError(an array but not exactly array) in catch block
  */
 
 Promise.any([promise1rej(), promise2res(), promise3res()])
