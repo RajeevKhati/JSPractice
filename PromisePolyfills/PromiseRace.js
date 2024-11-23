@@ -7,7 +7,7 @@ const promise2rej = () => Promise.reject(2);
 const promise3rej = () => Promise.reject(3);
 
 /**
- * Promise any:-
+ * Promise race:-
  *  resolves when first settled promise is resolved
  *      - provides value of resolved promise in then block
  *  rejects when first settled promise is rejected
